@@ -1,0 +1,38 @@
+{
+  "name": "cee-vee-backend",
+  "version": "1.0.0",
+  "description": "Backend for Cee-Vee AI Resume Assistant",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrinmayeeWardekar/cee-vee-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MrinmayeeWardekar/cee-vee-backend/issues"
+  },
+  "homepage": "https://github.com/MrinmayeeWardekar/cee-vee-backend#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.20.0",
+    "multer": "^2.0.2",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^2.4.5",
+    "pdf2json": "^4.0.0",
+    "pdfjs-dist": "^5.4.394"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
