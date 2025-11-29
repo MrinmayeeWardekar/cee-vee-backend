@@ -7,7 +7,7 @@ const connectDB = require("./config/db");
 // Import routes
 const authRoutes = require('./routes/authRoutes');
 const resumeRoutes = require('./routes/resumeRoutes');
-
+const chatbotRoutes = require('./routes/chatbotRoutes');
 connectDB();
 
 const app = express();
@@ -22,6 +22,7 @@ app.get("/", (req, res) => {
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/resume', resumeRoutes);
+app.use('/api/chatbot', chatbotRoutes);
 
 // Serve uploaded files (optional - for viewing files later)
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
